@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-page">
+    <nav id="nav" class="nav whiteBack">
+        <div class="logo">
+          <h1>Gadget Hub</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="login-search">
+            <ul class="login">
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+                <li onclick="showSearch()"><a href="#"></a>Search</li>
+                <li onclick="showLogin()"><a href="#"></a>Login</li>
+            </ul>
+            <div class="icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+               <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </div>
+        </div>
+      </nav>
+
+
+      <div class="mobile-menu" id="mobile-menu">
+        <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li onclick="showLogin()">Login<a href="#"></a></li>
+            <li onclick="showSearch()">Search<a href="#"></a></li>
+      </div>
+     
+      <!---------- search--------->
+      <div class="search" id="search-content">
+        <div class="container">
+        <form action="" class="search__form">
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+        </form>
+        <i class="fa-solid fa-times search__close" id="search-close" onclick="hideSearch()"></i>
+      </div>
+    </div>
+
+        <!-------login?----->
+        <div class="login-page grid" id="login-content">
+            <form action="" class="login__form grid">
+                <div class="container">
+              <h3 class="login__title">Log In</h3>
+              <div class="login__group grid">
+                <div>
+                  <label for="login-email" class="login__label">Email</label>
+                  <input
+                    type="email"
+                    id="login-email"
+                    class="login__input"
+                    placeholder="Write Your Email"
+                  />
+                </div>
+                <div>
+                  <label for="login-pass" class="login__label">Password</label>
+                  <input
+                    type="password"
+                    id="login-pass"
+                    class="login__input"
+                    placeholder="Enter your password"
+                  />
+                </div>
+              </div>
+              <div>
+                <button type="submit" class="login__button button">Log In</button>
+                <span class="login__signup">
+                  You do not have an account? <a href="#">Sign up</a>
+                </span>
+                <a href="#" class="login__forgot"> You forgot your password? </a>
+              </div>
+            </div>  
+            </form>
+            <i class="fa-solid fa-times login-close" id="login-close" onclick="hideLogin()"></i>
+        </div>
+
+
+         <!-------mobile-menu----->
+      <div class="mobile-menu whiteBack" id="mobile-menu">
+        <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+            <li><a href="index.html"></a>Home</li>
+            <li><a href="product.html"></a>About Us</li>
+            <li><a href="contact.html"></a>Contact Us</li>
+            <li onclick="showSearch()"><a href="#"></a>Search</li>
+            <li><a href="#"></a>Login</li>
+            <li><a href="#"></a>Cart</li>
+      </div>
+         
+      <section class="cta contactPage">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <p>
+            At Gadget Hub, we're dedicated to providing you with an
+            exceptional online shopping experience. We understand that in today's
+            fast-paced world, convenience, quality, and variety are paramount.</p>
+            <form action="" class="contactForm">
+                <div class="row">
+                    <div class="left-col"> 
+                        <div class="info">
+                        <div class="details">
+                            <i class="fa-solid fa-home"></i>
+                            <span>
+                            <h4>Address:</h4>
+                            3904 Formula Lane, Dallas, Texas TX, USA<br/>
+                            </span> 
+                        </div>
+                        <div class="details">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                            <h4>Contact:</h4>
+                            Phone Number: +1 (1) 9876543210<br/>
+                            Email Address: info@gadgeethub.com
+                            </span> 
+                        </div>
+                        <div class="details">
+                            <i class="fa-solid fa-link"></i>
+                            <span>
+                            <h4>Social Media Links:</h4>
+                            Facebook: https://www.facebook.com/GadgetHub<br/>
+                            Twitter: <br> https://twitter.com/GadgetHub<br/>
+                            Instagram: https://instagram.com/GadgetHub
+                            </span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="right-col">
+                    <div class="fields">
+                    <div class="contactField">       
+                       <input type="text" placeholder="Your Name"> 
+                    </div>
+                    <div class="contactField">                       
+                       <input type="text" placeholder="Your Email"> 
+                    </div>
+                    <div class="contactField">
+                       <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                    </div>
+                    <div class="contactField">
+                    <button class="cta-btn-1">Send</button>
+                    </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <div class="logo">
+                    <h1>Gadget Hub</h1>
+                    <p>Allright reserved &copy; 2021 <br> by Gadget Hub</p>
+                </div>
+                <div class="about">
+                    <h2>About Us</h2>
+                    <ul>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Forum</a></li>
+                        <li><a href="">Examples</a></li>
+                        <li><a href="">Home</a></li>
+                    </ul>
+                </div>
+                <div class="guides">
+                    <h2>Guides</h2>
+                    <ul>
+                        <li><a href="">Getting started</a></li>
+                        <li><a href="">Webpack</a></li>
+                        <li><a href="">Parcel</a></li>
+                        <li><a href="">Vite</a></li>
+                    </ul>
+                </div>
+                <div class="community">
+                    <h2>Community</h2>
+                    <ul>
+                        <li><a href="">Issue</a></li>
+                        <li><a href="">Discussion</a></li>
+                        <li><a href="">Open Collective</a></li>
+                    </ul>
+                </div>
+          </div>
+        </div>
+    </footer>
+</div>
+</body>
+<script>
+    const menuBtn = document.getElementById('mobile-menu');
+    function showMenu(){
+        menuBtn.classList.add('active')
+    }
+    function hideMenu(){
+        menuBtn.classList.remove('active')
+    }
+    const searchBtn = document.getElementById('search-content')
+    function showSearch(){
+       searchBtn.classList.toggle('show__search')
+    }
+    function hideSearch(){
+        searchBtn.classList.remove('show__search')
+    }
+    const loginBtn = document.getElementById('login-content')
+    function showLogin(){
+       loginBtn.classList.toggle('show__login')
+    }
+    function hideLogin(){
+       loginBtn.classList.remove('show__login')
+    }
+  </script>
+<script src="scrollreveal.min.js"></script>
+<script src="https://kit.fontawesome.com/32f5889744.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>

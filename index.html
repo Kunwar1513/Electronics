@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gadget Hub</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav id="nav" class="nav">
+        <div class="logo">
+          <h1>Gadget Hub</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="login-search">
+            <ul class="login">
+                <li onclick="showSearch()"><a href="#"></a>Search</li>
+                <li onclick="showLogin()"><a href="#"></a>Login</li>
+            </ul>
+            <div class="icons">
+                <div><i class="fa-solid fa-cart-shopping"></i></div>
+               <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </div>
+        </div>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li onclick="showLogin()">Login<a href="#"></a></li>
+            <li onclick="showSearch()">Search<a href="#"></a></li>
+      </div>
+
+
+      <!---------- search/--------->
+      <div class="search" id="search-content">
+        <div class="container">
+        <form action="" class="search__form">
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+        </form>
+        <i class="fa-solid fa-times search__close" id="search-close" onclick="hideSearch()"></i>
+      </div>
+    </div>
+
+    <!-------login?----->
+    <div class="login-page grid" id="login-content">
+        <form action="" class="login__form grid">
+            <div class="container">
+          <h3 class="login__title">Log In</h3>
+          <div class="login__group grid">
+            <div>
+              <label for="login-email" class="login__label">Email</label>
+              <input
+                type="email"
+                id="login-email"
+                class="login__input"
+                placeholder="Write Your Email"
+              />
+            </div>
+            <div>
+              <label for="login-pass" class="login__label">Password</label>
+              <input
+                type="password"
+                id="login-pass"
+                class="login__input"
+                placeholder="Enter your password"
+              />
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="login__button button">Log In</button>
+            <span class="login__signup">
+              You do not have an account? <a href="#">Sign up</a>
+            </span>
+            <a href="#" class="login__forgot"> You forgot your password? </a>
+          </div>
+        </div>  
+        </form>
+        <i class="fa-solid fa-times login-close" id="login-close" onclick="hideLogin()"></i>
+    </div>
+
+    <!----------banner-text------->
+      <div class="banner-text">
+        <h2>Find the best gadgets for you!</h2>
+        <p>
+          At Gadget Hub, we're dedicated to providing you with an
+          exceptional online shopping experience. We understand that in today's
+          fast-paced world, convenience, quality, and variety are paramount.
+          That's why we've carefully curated a selection of Electronics
+          that cater to your every need and desire.
+        </p>
+        <button href="#" class="exploreBtn"><a href="product.html">Explore More</a></button>
+      </div>
+    </header>
+    <section class="featured-products" id="featured-products">
+        <div class="container">
+            <h3 class="sub-title">Featured Products</h3>
+            <div class="products-list">
+                <div class="product-card">
+                    <img src="images/Laptop.png" alt="" />
+                    <h4>Dell Laptop</h4>
+                    <p>$799.00</p>
+                    <button type="submit"  class="buyNow">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/Tablet-1.png" alt="" />
+                    <h4>Tab-4</h4>
+                    <p>$299.00</p>
+                    <button type="submit" class="buyNow">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/ipad.png" alt="" />
+                    <h4>I-pad</h4>
+                    <p>$299.00</p>
+                    <button type="submit" class="buyNow">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/Tablet-2.png" alt="" />
+                    <h4>Galaxy Tablets</h4>
+                    <p>$399.00</p>
+                    <button type="submit" class="buyNow">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/Laptop-1.png" alt="" />
+                    <h4>Acer Laptop</h4>
+                    <p>$899.00</p>
+                    <button type="submit" class="buyNow">Buy Now</button>
+                </div>
+           </div>
+        </div>
+    </section>
+    <section class="latest-products" id="latest-products">
+        <div class="container">
+            <h3 class="sub-title">Latest Products</h3>
+            <div class="products-list">
+                <div class="product-card">
+                    <img src="images/TV.png" alt="">
+                    <h4>Sony Television</h4>
+                    <p>$2500</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <a href="#"><button type="submit" class="buyNow">Buy Now</button></a>
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                </div>
+                <div class="product-card">
+                    <img src="images/smartwatch1.png" alt="">
+                    <h4>Apple Watch</h4>
+                    <p>$300</p>
+                     
+                                        <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <a href="#"><button type="submit" class="buyNow">Buy Now</button></a>
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                </div>
+                <div class="product-card">
+                    <img src="images/Monitor.png" alt="" />
+                    <h4>Monitor</h4>
+                    <p>$499</p>
+                                        <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <a href="#"><button type="submit" class="buyNow">Buy Now</button></a>
+                                         <span>
+                                            <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                </div>
+                <div class="product-card">
+                    <img src="images/Headphone.png" alt="">
+                    <h4>Boat Headphone</h4>
+                    <p>$179</p>
+                                        <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <a href="#"><button type="submit" class="buyNow">Buy Now</button></a>
+                                        <span>
+                                            <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                </div>
+                <div class="product-card">
+                    <img src="images/Laptop-2.png" alt="">
+                    <h4>Acer Laptop</h4>
+                    <p>$499</p>
+                        <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <a href="#"><button type="submit" class="buyNow">Buy Now</button></a>
+                         <span>
+                            <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                </div>
+                <div class="product-card">
+                    <img src="images/Laptop.png" alt="">
+                    <h4>Dell Laptop</h4>
+                    <p>$599</p>
+                     <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <a href="#"><button type="submit" class="buyNow">Buy Now</button></a>
+                       <span>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                </div>
+                <div class="product-card">
+                    <img src="images/smartwatch.png" alt="">
+                    <h4>Xi Smartwatch</h4>
+                    <p>$99</p>
+                        <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <a href="#"><button type="submit" class="buyNow">Buy Now</button></a>
+                                         <span>
+                                            <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                </div>
+                <div class="product-card">
+                    <img src="images/Laptop-1.png" alt="">
+                    <h4>Asus Laptop</h4>
+                    <p>$799</p>
+                                        <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <a href="#"><button type="submit" class="buyNow">Buy Now</button></a>
+                                         <span>
+
+                                            <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                </div>
+                <div class="product-card">
+                    <img src="images/ipad.png" alt="">
+                    <h4>I-Pad</h4>
+                    <p>$699</p>
+                                        <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <a href="#"><button type="submit" class="buyNow">Buy Now</button></a>
+                                         <span>
+                                            <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                </div>
+                <div class="product-card">
+                    <img src="images/All Gadget.png" alt="">
+                    <h4>PlayStation-4</h4>
+                    <p>$299</p>
+                                        <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <a href="#"><button type="submit" class="buyNow">Buy Now</button></a>
+                                         <span>
+                                            <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                </div>
+            </section>
+            <section class="cta">
+                <div class="container">
+                    <h3>Exclusive Products</h3>
+                    <p>
+                    At Gadget Hub, we're dedicated to providing you with an
+                    exceptional online shopping experience. We understand that in today's
+                    fast-paced world, convenience, quality, and variety are paramount.</p>
+                    <button class="cta-btn">Explore More</button>
+                </div>
+            </section>
+    <section class="testimonals">
+        <div class="container">
+            <h3 class="sub-title">Testimonials</h3>
+            <div class="testimonals-card">
+                <div class="user-info">
+                    <img src="images/user-1_1.png" alt="" />
+                    <h4>Emily Rajkot</h4>
+                    <small>New York City</small>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <p>"I can't say enough good things about this e-commerce website! It's my go-to place for all my shopping needs. The user-friendly interface, quick and hassle-free checkout process.</p>
+                </div>
+                <div class="user-info">
+                    <img src="images/user0.jpg" alt="" />
+                    <h4>Jerry Doe</h4>
+                    <small>Los Santos</small>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <p>"I've been a loyal customer of this e-commerce website for over a year now, and I'm consistently impressed. Not only do they have a fantastic selection of products.</p>
+                </div>
+                <div class="user-info">
+                    <img src="images/user-3.png" alt="" />
+                    <h4>Anna D'Cruz</h4>
+                    <small>Los Angeles</small>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <p>"This e-commerce website has revolutionized my shopping experience. I love the convenience of browsing and purchasing items from the comfort of my own home. What really stands out.</p>
+                </div>
+                <div class="user-info">
+                    <img src="images/user-2.png" alt="" />
+                    <h4>Michael D'Santa</h4>
+                    <small>Manchester</small>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <p>"I've tried many e-commerce websites, but this one takes the cake. The variety of products they offer, from electronics to fashion, is incredible. I've made numerous purchases.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <div class="logo">
+                    <h1>Gadget Hub</h1>
+                    <p>Allright reserved &copy; 2021 <br> by Gadget Hub</p>
+                </div>
+                <div class="about">
+                    <h2>About Us</h2>
+                    <ul>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Forum</a></li>
+                        <li><a href="">Examples</a></li>
+                        <li><a href="">Home</a></li>
+                    </ul>
+                </div>
+                <div class="guides">
+                    <h2>Guides</h2>
+                    <ul>
+                        <li><a href="">Getting started</a></li>
+                        <li><a href="">Webpack</a></li>
+                        <li><a href="">Parcel</a></li>
+                        <li><a href="">Vite</a></li>
+                    </ul>
+                </div>
+                <div class="community">
+                    <h2>Community</h2>
+                    <ul>
+                        <li><a href="">Issue</a></li>
+                        <li><a href="">Discussion</a></li>
+                        <li><a href="">Open Collective</a></li>
+                    </ul>
+                </div>
+          </div>
+        </div>
+    </footer>
+  </body>
+  <script>
+    const menuBtn = document.getElementById('mobile-menu');
+    function showMenu(){
+        menuBtn.classList.add('active')
+    }
+    function hideMenu(){
+        menuBtn.classList.remove('active')
+    }
+
+    const searchBtn = document.getElementById('search-content')
+    function showSearch(){
+       searchBtn.classList.toggle('show__search')
+    }
+    function hideSearch(){
+        searchBtn.classList.remove('show__search')
+    }
+
+    const loginBtn = document.getElementById('login-content')
+    function showLogin(){
+       loginBtn.classList.toggle('show__login')
+    }
+    function hideLogin(){
+       loginBtn.classList.remove('show__login')
+    }
+    
+  </script>
+  <script src="scrollreveal.min.js"></script>
+  <script src="https://kit.fontawesome.com/32f5889744.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</html>
